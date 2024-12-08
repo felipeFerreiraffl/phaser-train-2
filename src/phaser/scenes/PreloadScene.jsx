@@ -22,7 +22,7 @@ export default class PreloadScene extends Phaser.Scene {
       frameWidth: 32,
       frameHeight: 32,
     });
-    this.load.spritesheet("power-up", "assets/spritesheets/power-up", {
+    this.load.spritesheet("power-up", "assets/spritesheets/power-up.png", {
       frameWidth: 16,
       frameHeight: 16,
     });
@@ -97,7 +97,7 @@ export default class PreloadScene extends Phaser.Scene {
     });
     this.anims.create({
       key: "am_red_powerUp",
-      frames: this.anims.generateFrameNumbers("powerUp", {
+      frames: this.anims.generateFrameNumbers("power-up", {
         start: 0,
         end: 1,
       }),
@@ -106,7 +106,7 @@ export default class PreloadScene extends Phaser.Scene {
     });
     this.anims.create({
       key: "am_gray_powerUp",
-      frames: this.anims.generateFrameNumbers("powerUp", {
+      frames: this.anims.generateFrameNumbers("power-up", {
         start: 2,
         end: 3,
       }),
