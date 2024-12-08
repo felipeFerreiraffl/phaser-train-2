@@ -1,4 +1,4 @@
-import { Phaser } from "phaser";
+import Phaser from "phaser";
 
 const config = {
   type: Phaser.AUTO,
@@ -6,6 +6,7 @@ const config = {
   height: 272,
   backgroundColor: "#0C0C0C",
   scene: [],
+  parent: "game-container",
   physics: {
     default: "arcade",
     arcade: {
@@ -13,5 +14,9 @@ const config = {
     },
   },
 };
+
+export const gameSettings = {
+  playerSpeed: 200,
+}
 
 export default config;
